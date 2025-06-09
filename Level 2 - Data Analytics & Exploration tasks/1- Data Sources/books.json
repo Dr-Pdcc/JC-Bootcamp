@@ -1,0 +1,38 @@
+[
+    {
+      "title": "Transport Phenomena",
+      "author": "R. Byron Bird, Warren E. Stewart, Edwin N. Lightfoot",
+      "year": 2002,
+      "genre": "Chemical Engineering"
+    },
+    {
+      "title": "Perry's Chemical Engineers' Handbook",
+      "author": "Don W. Green, Marylee W. Southard",
+      "year": 2018,
+      "genre": "Reference"
+    },
+    {
+      "title": "Introduction to Chemical Engineering Thermodynamics",
+      "author": "J.M. Smith, H.C. Van Ness, M.M. Abbott",
+      "year": 2021,
+      "genre": "Thermodynamics"
+    },
+    {
+      "title": "Chemical Reaction Engineering",
+      "author": "Octave Levenspiel",
+      "year": 1998,
+      "genre": "Reaction Engineering"
+    },
+    {
+      "title": "Process Systems Analysis and Control",
+      "author": "Donald R. Coughanowr, Steven E. LeBlanc",
+      "year": 2009,
+      "genre": "Process Control"
+    },
+    {
+      "title": "Principles of Heat Transfer",
+      "author": "Frank Kreith, Raj M. Manglik, Mark S. Bohn",
+      "year": 2010,
+      "genre": "Heat Transfer"
+    }
+  ]

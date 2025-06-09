@@ -1,0 +1,65 @@
+1. An algorithm that asks a user to enter a positive number repeatedly
+until the user enters a zero value, then determines and outputs the
+largest of the numbers that were input.
+
+Proposed pseudocode:
+
+set largest_number to zero (to store the largest number entered by the user)
+repeat:
+ request a positive number from the user
+ if user input is greater than largest_number
+	assign user input to largest_number
+until user input is equal to zero
+print the final value of largest_number
+
+2.An algorithm that requests a user to input their name and then
+stores their name in a variable called first_name. Subsequently, the
+algorithm should print out first_name along with the phrase “Hello,
+World”.
+
+Proposed pseudocode:
+
+define variable first_name
+request user input ("Enter your name:")
+assign user input to first_name
+print(first_name + "Hello,World")
+
+3.An algorithm that reads an arbitrary number of integers and then
+returns their arithmetic average.
+
+Proposed pseudocode:
+
+initialise variable total_sum to zero
+initialise variable count to zero 
+request an integer from the user
+if the input is not zero
+	add user input to the total_sum
+	increment count by one
+if the input is zero
+	exit the loop
+calculate the arithmetic average (total_sum / count)
+print arithmetic average
+
+4.An algorithm that reads a grocery list and prints out the products
+(in alphabetical order) that are still left to buy.
+
+Proposed pseudocode:
+
+initialise an empty list called grocery_list
+initialise an empty list called bought_list
+ask the user to input the grocery list 
+ask the user to input bought_items
+determine which items are left to buy (remove all items in bought_list from grocery_list)
+sort the remaning items in alphabetical order
+print the new sorted grocery_list
+
+5.An algorithm for the flowchart below:
+
+Proposed pseudocode:
+
+ask the user to input two numbers
+assign first number to X and second number to Y ( X = number 1 and Y = number 2)
+calculate S as X + Y
+calculate A as S/2
+calculate P as X * Y
+Print(S, A, P)

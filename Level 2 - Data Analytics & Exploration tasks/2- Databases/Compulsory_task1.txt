@@ -1,0 +1,49 @@
+1. Define each of the following terms:
+a) Data: data are raw facts that have no meaning until they have been
+organised in some logical manner. Examples of data are a customer name
+or a telephone number. 
+
+b) Field: a field is a character or group of characters that have a
+specific meaning. Fields are used to define and store data. 
+
+c) Record: a record is a logically connected set of one or more fields
+that describes a person, place or thing. 
+
+d) File: a file is a collection of related records. 
+
+2. What is a DBMS and what are its advantages?
+DBMS stands for Data Base Management System. A DBMS is a collection of programs
+that works to manage the database structure and control access to the data
+stored in the database. 
+
+Some of the advantages of DBMS are:
+    - Better data sharing
+    - Improved data integration
+    - Minimised data inconsistency
+    - Improved data access
+    - Improved decision making
+    - Increased end-user productivity
+
+3. Explain the difference between data and information.
+Data are raw facts with no logical meaning. Information is the result of
+processing raw data to reveal its meaning.
+
+For example, a list of sales figures is Data, while a report showing monthly revenue
+trends is Information. 
+ 
+4. What is metadata?
+Metadata describes data characteristics and structure, such as field names,
+data types, etc
+
+5. Given the file below, answer the following questions:
+
+e) How many records does the file contain?
+The file contains 4 records
+
+f) How many fields are there per record?
+Each record is composed of 5 fields, these are:
+Project_code
+Project_manager
+manager_phone
+manager_address
+project_bid_price

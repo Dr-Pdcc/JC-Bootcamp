@@ -1,0 +1,59 @@
+1. Create a table named Student with the following fields:
+    STU_NUM: Unique student number (Primary Key).
+    STU_NAME: Student's last name.
+    STU_FNAME: Student's first name.
+    STU_INITIAL: Middle initial.
+    STU_STARTDATE: Date when the student started.
+    COURSE_CODE: A three-character code representing the course.
+    PROJ_NUM: Project number, with a constraint limiting lenght to 2 digits
+
+CREATE TABLE Student (
+    STU_NUM char(6),
+    STU_NAME varchar(15),
+    STU_FNAME varchar(15),
+    STU_INITIAL char(1),
+    STU_STARTDATE date,
+    COURSE_CODE char(3),
+    PROJ_NUM int CHECK (PROJ_NUM >= 0 AND PROJ_NUM <= 99),
+    PRIMARY KEY (STU_NUM)
+);
+
+2. Insert 7 rows of student data into the Student table:
+
+INSERT INTO Student (STU_NUM, STU_NAME, STU_FNAME, STU_INITIAL, STU_STARTDATE, COURSE_CODE, PROJ_NUM)
+VALUES  
+    ('000001', 'Snow', 'Jon', 'E', '2014-04-05', '201', 6),
+    ('000002', 'Stark', 'Arya', 'C', '2017-07-12', '305', 11),
+    ('000003', 'Lannister', 'Jamie', 'C', '2012-09-05', '101', 2),
+    ('000004', 'Lannister', 'Cercei', 'J', '2012-09-05', '101', 2),
+    ('000005', 'Greyjoy', 'Theon', 'I', '2015-12-09', '402', 14),
+    ('000006', 'Tyrell', 'Margaery', 'Y', '2017-07-12', '305', 10),
+    ('000007', 'Baratheon', 'Tommen', 'R', '2019-06-13', '201', 5);
+
+3. Retrieve all records from the Student table where the COURSE_CODE is 305:
+
+SELECT *
+FROM Student
+WHERE COURSE_CODE = '305';
+
+4. Change the course code to 304 for the person whose student number is 07:
+
+UPDATE Student
+SET COURSE_CODE = '304'
+WHERE STU_NUM = '000007';
+
+5. Delete the row of the person named Jamie Lannister, who started on 5 September 2012,
+ whose course code is 101 and project number is 2:
+
+DELETE FROM Student
+WHERE STU_FNAME = 'Jamie' AND STU_NAME ='Lannister' AND STU_STARTDATE = '2012-09-05' AND COURSE_CODE = '101' AND PROJ_NUM = 2;
+
+6. Change the PROJ_NUM to 14 for all those students who started before 1 January 2016 and whose course code is at least 201:
+
+UPDATE Student
+SET PROJ_NUM = 14
+WHERE STU_STARTDATE < '2016-01-01' AND COURSE_CODE >= '201';
+
+7. Delete the Student table entirely:
+
+DROP TABLE Student;
